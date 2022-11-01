@@ -1,9 +1,10 @@
 .home-page {
   #rosafoto {
-    position: inherit;
-    margin-left: 50%;
+    position: center;
+    margin-left: 35%;
     margin-top: 10%;
   }
+
   .text-zone {
     position: absolute;
     left: 10%;
@@ -69,7 +70,7 @@
 
 @media screen and (max-width: 1200px) {
 
- 
+
 
   .home-page .text-zone {
     position: initial;
