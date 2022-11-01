@@ -35,9 +35,13 @@ const Contact = () => {
             Contáctame
           </h1>
           <p>
-            I am interested in freelance opportunities - especially on ambitious
-            or large projects. However, if you have any other requests or
-            questions, don't hesitate to contact me using below form either.
+            Soy una entusiasta desarrolladora en busca de un reto profesional
+          </p>
+          <p>
+            Teléfono	(614)495-10-87 </p>
+            <br/>
+            <p>
+            Dirección	Tomás García #600 Col. Deportistas
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>
@@ -53,7 +57,7 @@ const Contact = () => {
                     required
                   />
                 </li>
-      
+
                 <li>
                   <textarea
                     placeholder="Message"
