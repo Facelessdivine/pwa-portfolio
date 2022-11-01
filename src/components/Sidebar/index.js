@@ -1,18 +1,12 @@
 import './index.scss'
 import { useState } from 'react'
-import LogoS from '../../assets/images/logo-s.png'
+import LogoS from '../../assets/images/rose256.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {
-  faLinkedin,
-  faGithub,
-  faYoutube,
-  faGoogle
-} from '@fortawesome/free-brands-svg-icons'
+
 import {
   faHome,
   faUser,
   faEnvelope,
-  faSuitcase,
   faBars,
   faClose,
 } from '@fortawesome/free-solid-svg-icons'
@@ -28,7 +22,6 @@ const Sidebar = () => {
         to="/"
         onClick={() => setShowNav(false)}>
         <img src={LogoS} alt="Logo" />
-        <p className="title" style={{ marginLeft: "4px", fontFamily: "monospace", fontSize: "22px", textDecoration: "none", color: "white" }}> Raúl</p>
       </Link>
       <nav className={showNav ? 'mobile-show' : ''}>
         <NavLink
@@ -45,14 +38,7 @@ const Sidebar = () => {
           onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
-        <NavLink
-          activeclassname="active"
-          className="portfolio-link"
-          to="/portfolio"
-          onClick={() => setShowNav(false)}
-        >
-          <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
-        </NavLink>
+
         <NavLink
           activeclassname="active"
           className="contact-link"
@@ -64,68 +50,14 @@ const Sidebar = () => {
         <FontAwesomeIcon
           onClick={() => setShowNav(false)}
           icon={faClose}
-          color="#ffd700"
+          color="rgb(254, 178, 237)"
           size="3x"
           className='close-icon' />
       </nav>
-      <ul>
-        <li>
-          <a
-            href="https://www.linkedin.com/in/ra%C3%BAl-herrera-mac%C3%ADas-a887a5212/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/Facelessdivine"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FontAwesomeIcon
-              icon={faGithub}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://www.youtube.com/channel/UCrzNPJqCLjZn5igiW9Ja4XQ"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faYoutube}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="mailto: facelessdivine@gmail.com"
-            rel="noreferrer"
-            target="_blank"
-          >
-            <FontAwesomeIcon
-              icon={faGoogle}
-              color="#4d4d4e"
-              className="anchor-icon"
-            />
-          </a>
-        </li>
-      </ul>
       <FontAwesomeIcon
         onClick={() => setShowNav(true)}
         icon={faBars}
-        color="#ffd700"
+        color="rgb(254, 178, 237)"
         size="3x"
         className='hamburger-icon' />
     </div>
